@@ -1,0 +1,10 @@
+
+public class mainClass {
+	public static void main(String[] args) {
+		/* 
+		 * Array: 배열 
+		 * 		  변수의 확장 기능.
+		 * 		 정의: 같은 자료형 변수의 묶음
+		 */
+	}
+}
