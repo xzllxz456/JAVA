@@ -1,0 +1,12 @@
+
+public class mainClass {
+	public static void main(String[] args) {
+		/*
+		 * loop문, 순환문  
+		 * 지정된 회수만큼 반복을 처리하는 제어문
+		 * 
+		 */
+		
+		
+	}
+}

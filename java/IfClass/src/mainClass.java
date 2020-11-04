@@ -1,4 +1,3 @@
-
 public class mainClass {
 	public static void main(String[] args) {
 		/*
@@ -134,24 +133,13 @@ public class mainClass {
 		if(b) {
 			System.out.println("b는 true입니다.");
 		}
-		
 //		int i = 1;
 //		if(i) {
 //		오류 안됨	
 //		}
 		
-		
+
+
 		
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
