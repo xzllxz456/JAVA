@@ -1,0 +1,11 @@
+package day3Example;
+
+public class JavaEx01 {
+	public static void main(String[] args) {
+		for(int i = 1; i <= 10; i++) {
+			int sum = 0;
+			sum += i;
+			System.out.println(sum);
+		}
+	}
+}

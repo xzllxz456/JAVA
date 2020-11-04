@@ -51,5 +51,46 @@ public class mainClass {
 		for(int i = 0; i < 10; i++) {		// for문 안에 변수를 선언하면 for문 종료시 소멸
 			System.out.println("i = " + i);
 		}
+		
+		for(int i = 10; i > 0; i--) {		
+			System.out.println("i = " + i);
+		}
+		
+		for(int i = 0; i < 10; i = i + 2) {		
+			System.out.println("i = " + i);
+		}
+		
+		int _num = 0;
+		for( ; _num < 10; ) {
+			System.out.println("_num = " + _num);
+			_num++;
+		}
+		
+		for(int i = 0, j = 0; i< 10; i++, j++) {// 조건식에 i< 10, j < 10 은 안된다. 이유는 조건이 명확하지 않고 둘중에 어느것에 맞출지 모르기 때문
+			System.out.println("i = " + i);
+			System.out.println("j = " + j);
+		}
+		int n1, n2;
+		n1 = 0;
+		n2 = 0;
+		for(int i = 0; i < 10; i++) {	//위 식과 동일
+			System.out.println("n1 = " + n1);
+			System.out.println("n2 = " + n2);
+			n1++;
+			n2++;
+		}
+		
+		// 2중 for문
+		for(int i = 0; i < 10; i++) {
+			System.out.println("i = " + i);
+			for(int j = 0; j < 5; j++) {
+				System.out.println("  j = " + j);
+			}
+			System.out.println();
+			for(int k = 0; k < 5; k++) {
+				System.out.println("    k = " + k);
+			}
+		}
+		
 	}
 }
