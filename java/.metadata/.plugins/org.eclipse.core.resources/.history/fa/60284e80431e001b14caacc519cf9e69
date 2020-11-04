@@ -1,0 +1,22 @@
+
+public class mainClass {
+	public static void main(String[] args) {
+		/*
+		 * 제어문
+		 * 
+		 * - 조건
+		 * 		if
+		 * 			if
+		 * 				else
+		 * 			if
+		 * 				else if
+		 * 
+		 * - 순환
+		 * 
+		 * 
+		 * 
+		 * 
+		 */
+		
+	}
+}
