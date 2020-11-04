@@ -28,12 +28,7 @@ public class javaEx02 {
 		}else if(num > 0 && num < 10) {
 			System.out.println("입력한 수는 0보다 크거나 10보다 작다.");
 		}
-		//방법 2
-		if(num == 100) {
-			System.out.println("100입니다");
-		}else {
-			System.out.println("입력한 수는 " + ((num/10)*10) + "보다크거나" + (((num/10)*10)+10) + "보다작");
-		}
+		
 		
 	}
 }	

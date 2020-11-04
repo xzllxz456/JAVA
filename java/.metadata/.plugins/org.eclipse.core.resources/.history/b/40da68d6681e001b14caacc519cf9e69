@@ -32,7 +32,7 @@ public class javaEx02 {
 		if(num == 100) {
 			System.out.println("100입니다");
 		}else {
-			System.out.println("입력한 수는 " + ((num/10)*10) + "보다크거나" + (((num/10)*10)+10) + "보다작");
+			System.out.println("입력한 수는 " + ((num/10)*10));
 		}
 		
 	}
