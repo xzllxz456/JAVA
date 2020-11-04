@@ -1,0 +1,84 @@
+
+bitcamp@DESKTOP-0TDKJLO MINGW64 ~/Desktop/java
+$ git init
+Initialized empty Git repository in C:/Users/bitcamp/Desktop/java/.git/
+
+bitcamp@DESKTOP-0TDKJLO MINGW64 ~/Desktop/java (master)
+$ git remote add origin https://github.com/xzllxz456/Java_practice#java_practice
+
+bitcamp@DESKTOP-0TDKJLO MINGW64 ~/Desktop/java (master)
+$ git remote
+origin
+
+bitcamp@DESKTOP-0TDKJLO MINGW64 ~/Desktop/java (master)
+$ git branch -r
+
+bitcamp@DESKTOP-0TDKJLO MINGW64 ~/Desktop/java (master)
+$ git branch -a
+
+bitcamp@DESKTOP-0TDKJLO MINGW64 ~/Desktop/java (master)
+$ git checkout -b dongho
+Switched to a new branch 'dongho'
+
+bitcamp@DESKTOP-0TDKJLO MINGW64 ~/Desktop/java (dongho)
+$ git branch -r
+
+bitcamp@DESKTOP-0TDKJLO MINGW64 ~/Desktop/java (dongho)
+$ git branch -a
+
+bitcamp@DESKTOP-0TDKJLO MINGW64 ~/Desktop/java (dongho)
+$ git branch
+
+bitcamp@DESKTOP-0TDKJLO MINGW64 ~/Desktop/java (dongho)
+$ git add .
+
+bitcamp@DESKTOP-0TDKJLO MINGW64 ~/Desktop/java (dongho)
+$ git commit -m "test"
+On branch dongho
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+bitcamp@DESKTOP-0TDKJLO MINGW64 ~/Desktop/java (dongho)
+$ git brnach
+git: 'brnach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+bitcamp@DESKTOP-0TDKJLO MINGW64 ~/Desktop/java (dongho)
+$ git branch
+
+$ git init
+Initialized empty Git repository in C:/Users/bitcamp/Desktop/java/.git/
+
+bitcamp@DESKTOP-0TDKJLO MINGW64 ~/Desktop/java (master)
+$ git remote add origin https://github.com/xzllxz456/Java
+
+bitcamp@DESKTOP-0TDKJLO MINGW64 ~/Desktop/java (master)
+$ git branch
+
+bitcamp@DESKTOP-0TDKJLO MINGW64 ~/Desktop/java (master)
+$ git checkout -b dongho
+Switched to a new branch 'dongho'
+
+bitcamp@DESKTOP-0TDKJLO MINGW64 ~/Desktop/java (dongho)
+$ git branch
+
+bitcamp@DESKTOP-0TDKJLO MINGW64 ~/Desktop/java (dongho)
+$ git brnach -r
+git: 'brnach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+bitcamp@DESKTOP-0TDKJLO MINGW64 ~/Desktop/java (dongho)
+$ git branch -a
+
+bitcamp@DESKTOP-0TDKJLO MINGW64 ~/Desktop/java (dongho)
+$ git branch -r
+
+bitcamp@DESKTOP-0TDKJLO MINGW64 ~/Desktop/java (dongho)
+$ git add .
+

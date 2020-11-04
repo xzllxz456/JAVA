@@ -1,0 +1,14 @@
+
+public class mainClass {
+
+	public static void main(String[] args) {
+		/*
+		 * 숫자(상수: 변할수 없는 숫자) 
+		 * 변수(variable)
+		 * 
+		 * 
+		 * 
+		 */
+	}
+
+}

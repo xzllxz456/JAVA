@@ -1,0 +1,30 @@
+
+public class mainClass {
+	public static void main(String[] args) {
+		/*
+		  operator
+		  +, -, *, /, %
+		  / : 몫  		9/2 -> 4
+		  % : 나눈 나머지 	9%2 -> 1
+		 */
+		
+		int num1, num2;
+		int result;		//결과
+		
+		num1 = 25;
+		num2 = 7;
+		
+		result = num1 + num2;
+		System.out.println("num1 + num2 = " + result);
+		System.out.println(num1 + " + " + num2 + "=" + result);
+		// "\     "hello" \ "world"
+		System.out.println("\"hello\" \\ \"world\"");
+		
+		result = num1 * num2;
+		System.out.println(num1 + " * " + num2 + "=" + result);
+		//주의점
+		// /, %
+		result = num1 / num2;		// 2 / 0 안됨
+	}
+	
+}

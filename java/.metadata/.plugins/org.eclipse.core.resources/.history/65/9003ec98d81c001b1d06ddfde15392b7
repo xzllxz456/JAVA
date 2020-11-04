@@ -1,0 +1,17 @@
+
+public class mainClass {
+
+	public static void main(String[] args) {
+		/*
+		 * 숫자(상수: 변할수 없는 숫자) 
+		 * 변수(variable)
+		 * 			2진수	: 0,1
+		 * 			8진수	: 0~7 10 -> 8 표기법 : 010
+		 * 			10진수	: 0~9
+		 * 			16진수	: 0~9 A B C D E F(15)	0xff
+		 * 
+		 * 
+		 */
+	}
+
+}

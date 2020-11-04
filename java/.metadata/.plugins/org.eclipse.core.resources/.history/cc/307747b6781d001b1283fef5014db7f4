@@ -1,0 +1,33 @@
+
+public class mainClass {
+	public static void main(String[] args) {
+		/*
+		 * 자료형 변환   int -> short	short -> int 
+		 * 
+		 * 					     우선순위
+		 * 
+		 * boolean	1byte		낮음
+		 * 
+		 * byte		1byte
+		 * short	2byte
+		 * int 		4byte
+		 * long		8byte
+		 * 
+		 * float	4byte
+		 * double	8byte		높음
+		 */
+		
+		// auto(자동형변환)	작은 공간 -> 큰 공간
+		short sh = 10;
+		int num;
+		
+		num = sh;
+		System.out.println("num: " + num);
+		
+		// cast(강제형변환)	큰 공간 -> 작은 공간
+		num = 324244;
+		sh = (short) num;
+		System.out.println("sh: " + sh);
+		
+	}
+}

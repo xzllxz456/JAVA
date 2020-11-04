@@ -1,0 +1,28 @@
+package test;
+
+public class mainTest {
+	
+	public static void main(String[] args) {
+		System.out.println("Test java");
+		
+		//절차지향, 객체지향 
+		
+		/*
+		  	범위 주석문
+		 */
+		
+		/*
+		 * 프로그램의 실행 순서
+		 * 1. source code
+		 * 2. compile (기계어로 번역해줌) -> a (이진코드로 변환 ->) 1011
+		 * 	 -link(외부 파일 읽기 <불러오기>)
+		 * 3. build(실행파일을 생성<이클립스를 통해 실행됨>) -> *.exe 
+		 * 4. 실행 
+		 */
+		
+		
+		
+		
+	}
+}
+ 

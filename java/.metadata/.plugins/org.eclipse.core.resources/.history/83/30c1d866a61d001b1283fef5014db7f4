@@ -1,0 +1,25 @@
+
+public class mainClass {
+	public static void main(String[] args) {
+		// 논리 연산자(true/false) 제어문(논리)
+		/*
+		 *  && AND
+		 *  || OR
+		 *  !  NOT
+		 *  
+		 *  제어문과 같이 사용(if, while, do while)
+		 */
+		
+		/*
+		 * 		AND		0 0 -> 0
+		 * 				0 1 -> 0
+		 * 				1 0 -> 0
+		 * 				1 1 -> 1
+		 */
+		int number = 0;
+		System.out.println(number > 0 && number > 10);
+		System.out.println(number > 0 && number <= 10);
+		System.out.println(number >= 0 && number > 10);
+		System.out.println(number >= 0 && number < 10);
+	}
+}

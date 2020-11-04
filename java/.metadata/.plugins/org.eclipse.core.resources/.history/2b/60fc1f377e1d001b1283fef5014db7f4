@@ -1,0 +1,13 @@
+
+public class mainClass {
+	public static void main(String[] args) {
+		/*
+		  operator
+		  +, -, *, /, %
+		  / : 몫  		9/2 -> 4
+		  % : 나눈 나머지 	9%2 -> 1
+		  
+		  
+		 */
+	}
+}

@@ -1,0 +1,78 @@
+package test;
+
+public class mainTest {
+	
+	public static void main(String[] args) {
+		System.out.println("Test java");
+		
+		
+		
+		System.out.println("Test java");
+		System.out.println("Test java");
+		System.out.println("Test java");
+		System.out.println("Test java");
+		/**/
+		
+		//절차지향, 객체지향 
+		
+		/*
+		  	범위 주석문
+		  	목적
+		  	1. compile을 하지 않는 코드
+		  	2. 처리에 대한 기입
+		 */
+		
+		/*
+		 * 프로그램의 실행 순서
+		 * 1. source code
+		 * 2. compile (기계어로 번역해줌) -> a (이진코드로 변환 ->) 1011
+		 * 	 -link(외부 파일 읽기 <불러오기>)
+		 * 3. build(실행파일을 생성<이클립스를 통해 실행됨>) -> *.exe 
+		 * 4. 실행 
+		 * 		(console 실행, app, web)	
+		 */
+		System.out.println("hello Java");	// 줄바꿈 가능한 함수
+		System.out.print("Hello Java");		// 줄바꿈 불가능한 함수
+		System.out.println();//줄바꿈
+		
+		// a ab 문자열
+		System.out.println("문자열 ");
+		System.out.println('한');
+		System.out.println('a');
+		System.out.println(1);//문자열로 출력
+		
+		System.out.println(1 + 2);//
+		System.out.println("1" + 2 + 3);
+		System.out.println(2 + 3 + "1");
+		//				    정수  <- 123 출력 
+		System.out.printf("%d", 123);
+		System.out.printf("%c\n", 'A');
+		System.out.printf("%s", "hello");
+		System.out.printf("%f", 123.456);
+		
+		System.out.println();
+		
+		// escape sequence  (탈출 지리어) 개행, 백스페이스, 콘솔환경에서만 사용
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

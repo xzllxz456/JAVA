@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class mainClass {
+	public static void main(String[] args) {
+		
+		//입력 (consol)
+		Scanner sc = new Scanner(System.in);
+		
+		// boolean (true/false)
+		boolean b;
+		System.out.println("b = ");
+		b = sc.NextBoolean();
+		// int (정수)
+		
+		// double (소수)
+		
+		// String (문자열)
+	}
+}

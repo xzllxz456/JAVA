@@ -1,0 +1,21 @@
+
+public class mainClass {
+	public static void main(String[] args) {
+		/*
+		 * bit : 0, 1
+		 * &	AND
+		 * |	OR
+		 * ^	XOR
+		 * << left shift
+		 * >> right shift
+		 * ~ 반전
+		 */
+		
+		int result;
+		
+		//AND	1011 1101 -> B C
+		//		8421 8421
+		//		1100 1001 -> C 9
+		result = 
+	}
+}
