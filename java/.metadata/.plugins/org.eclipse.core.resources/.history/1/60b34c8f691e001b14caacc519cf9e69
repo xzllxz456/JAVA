@@ -7,7 +7,6 @@ public class JavaEx02 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("숫자입력: ");
 		int num = sc.nextInt();
-		//방법1
 		if(num > 90 && num < 100) {
 			System.out.println("입력한 수는 90보다 크거나 100보다 작다.");
 		}else if(num > 80 && num < 90) {
