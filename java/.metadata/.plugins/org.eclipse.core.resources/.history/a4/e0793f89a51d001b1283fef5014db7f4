@@ -1,6 +1,0 @@
-
-public class mainClass {
-	public static void main(String[] args) {
-		// 논리 연산자(true/false)
-	}
-}

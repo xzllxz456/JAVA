@@ -1,8 +1,0 @@
-package test;
-
-public class mainTest {
-	public mainTest() {
-		System.out.println("test eclipse");
-	}
-	
-}
