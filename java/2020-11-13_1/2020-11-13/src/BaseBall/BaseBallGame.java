@@ -20,8 +20,6 @@ public class BaseBallGame {
 		u_num = new int[nnnn];
 		
 		rnamdonNumArr();
-		strike = 0;
-		ball = 0;
 	}
 	// 랜덤
 	public void rnamdonNumArr() {
@@ -69,7 +67,23 @@ public class BaseBallGame {
 	}
 	//스트라이크 
 	public void stststst() {
-		
+		strike = 0;
+		for (int i = 0; i < r_num.length; i++) {
+			if(u_num[i] == r_num[i])
+				strike++;
+		}
 	}
 	//볼
+	public void balllll() {
+		ball = 0;
+		for (int i = 0; i < r_num.length; i++) {
+			for (int j = 0; j < r_num.length; j++) {
+				if(u_num[i] == r_num[j] && i!=j) {
+					ball++;
+				}
+			}
+		}
+	}
+	
+	
 }
