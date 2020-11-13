@@ -2,9 +2,9 @@ package FileClass;
 
 import java.io.File;
 import java.io.IOException;
-
 public class mainClass {
-	public static void main(String[] args) {
+	public static void main(String[] args) /*throws Exception*/ {
+//////////////////////데이터 저장과 읽기//////////////////////////
 		/*
 		 	source code -> 알고리즘(logic)
 		 	
@@ -72,6 +72,41 @@ public class mainClass {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		/*
+		// 파일의 존재 여부
+		if(newfile.exists()) {
+			System.out.println("파일이 존재합니다.");
+		}else {
+			System.out.println("파일이 존재하지 않습니다.");
+		}
+		
+		// 파일 삭제
+		if(newfile.delete()) {
+			System.out.println(" 파일을 삭제 하였습니다.");
+		}else {
+			System.out.println("파일을 삭제하지 못했습니다.");
+		}
+		*/
+		
+		// 읽기 가능
+		if(newfile.canRead()) {
+			System.out.println("파일 읽기가 가능합니다.");
+		}else {
+			System.out.println("파일 읽을 수 없습니다.");
+		}
+		// 읽기 전용 세팅
+//		newfile.setReadOnly();
+		
+		// 쓰기전용
+//		newfile.setReadOnly();
+		// 쓰기(편집) 가능
+		if(newfile.canWrite()) {
+			System.out.println("파일 쓰기가 가능합니다.");
+		}else {
+			System.out.println("파일 쓰기가 불가능합니다.");
+		}
+		
+		
 	}
 	
 }
