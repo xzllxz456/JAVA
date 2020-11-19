@@ -1,9 +1,9 @@
 package dto;
 
 public class Batter extends Human {
-	private int batcount;
-	private int hit;
-	private double hitAvg;
+	private int batcount;	// 타수
+	private int hit;		// 안타수	
+	private double hitAvg;	// 타율
 	
 	public Batter() {
 	}
@@ -38,13 +38,20 @@ public class Batter extends Human {
 	public void setHitAvg(double hitAvg) {
 		this.hitAvg = hitAvg;
 	}
-
+	
+	public void batterClear() {
+		setNumber(0);
+		setName("");
+		setAge(0);
+		setHeight(0.0);
+		setHit(0);
+		setBatcount(0);
+		setHitAvg(0.0);
+	}
 	@Override
 	public String toString() {
-		return super.toString() + "Batter batcount/" + batcount + "/ hit=" + hit + "/ hitAvg " + hitAvg;
+//		return super.toString() + "Batter [batcount=" + batcount + ", hit=" + hit + ", hitAvg=" + hitAvg + "]";
+		return super.toString() + "-" + batcount + "-" + hit + "-" + hitAvg;
 	}
-	
-	
-	
 	
 }

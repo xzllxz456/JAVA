@@ -1,5 +1,6 @@
 package dao;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 import dto.Batter;
@@ -9,6 +10,7 @@ import file.DataProc;
 
 public class MemberDao {
 	Scanner sc = new Scanner(System.in);
+	DataProc file = new DataProc();
 	
 	private Human human[] = null;
 	private int mem_count;
@@ -67,8 +69,6 @@ public class MemberDao {
 		human[mem_count] = h;
 		mem_count++;
 	}
-	
-	
 	
 	public void allPrint() {
 		for (int i = 0; i < human.length; i++) {
@@ -159,13 +159,20 @@ public class MemberDao {
 			}
 		}
 	}
+
 	public void dataSave() {
-		DataProc file = new DataProc();
 		file.createFile("baseballMember");
 		String strArr[] = new String[mem_count];
 		dataChange(strArr);
 		file.dataSave(strArr);
+		
+		strArr = file.dataLoad();
+		for (int i = 0; i < strArr.length; i++) {
+			System.out.println(strArr[i]);
+		}
+		
 	}
+	
 	public void dataChange(String[] str) {
 		
 		for (int i = 0; i < mem_count; i++) {
@@ -178,5 +185,42 @@ public class MemberDao {
 //		for (String string : str) {
 //			System.out.println(string);
 //		}
+	}
+	
+
+	public void pitcherRank() {
+		Human copyHuman[] = new Human[mem_count];
+		System.arraycopy(human, 0, copyHuman, 0, mem_count);
+		for (int i = 0; i < copyHuman.length; i++) {
+			for (int j = i + 1; j < copyHuman.length; j++) {
+				if(copyHuman[j] instanceof Pitcher && copyHuman[i] instanceof Pitcher) {
+					if(((Pitcher)copyHuman[i]).getDefence() < ((Pitcher)copyHuman[j]).getDefence()) {
+						Human temp = copyHuman[i];
+						copyHuman[i] = copyHuman[j];
+						copyHuman[j] = temp;
+					}
+				}
+			}
+			for (int j = i + 1; j < copyHuman.length; j++) {
+				if(copyHuman[j] instanceof Batter && copyHuman[i] instanceof Batter) {
+					if(((Batter)copyHuman[i]).getHitAvg() < ((Batter)copyHuman[j]).getHitAvg()) {
+						Human temp = copyHuman[i];
+						copyHuman[i] = copyHuman[j];
+						copyHuman[j] = temp;
+					}
+				}
+			}
+		}
+		copyHumanPrint(copyHuman);
+	}
+	public void copyHumanPrint(Human copyHuman[]) {
+		for (int i = 0; i < copyHuman.length; i++) {
+			if(human[i] instanceof Pitcher) {
+				System.out.println("투수" + copyHuman[i]);
+			}
+			if(human[i] instanceof Batter) {
+				System.out.println("타자" + copyHuman[i]);
+			}
+		}
 	}
 }

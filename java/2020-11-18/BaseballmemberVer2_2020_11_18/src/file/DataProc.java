@@ -1,7 +1,10 @@
 package file;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -11,7 +14,6 @@ public class DataProc {
 	
 	public DataProc(){
 	}
-	
 	public File createFile(String fileName) {
 		f = new File("D:\\tmp\\" +fileName +".txt");
 
@@ -44,6 +46,36 @@ public class DataProc {
 		
 		return true;
 	}
-
+	
+	public String[] dataLoad() {
+		String datas[] = null;
+		try {
+			FileReader fr = new FileReader(f);
+			int count = 0;
+			String str;
+			BufferedReader br = new BufferedReader(fr);
+			while( (str = br.readLine()) != null ) {
+				count++;	
+			}
+			br.close();
+			
+			datas = new String[count];
+			fr = new FileReader(f);
+			br = new BufferedReader(fr);	// 파일포인터의 초기화
+			int i = 0;
+			while( (str = br.readLine()) != null ) {
+				datas[i] = str;
+				i++;
+			}
+			br.close();
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return datas;
+	}
+	
 	
 }

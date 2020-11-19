@@ -6,8 +6,10 @@ import dao.MemberDao;
 
 public class mainClass {
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MemberDao dao = new MemberDao();
 		Scanner sc = new Scanner(System.in);
-		MemberDao dao = new MemberDao(20);
+		// 메뉴
 		while(true) {
 			System.out.println("1. 선수 등록  ");
 			System.out.println("2. 선수 삭제  ");
@@ -15,7 +17,7 @@ public class mainClass {
 			System.out.println("4. 선수 수정  ");
 			System.out.println("5. 선수 모두 출력");
 			System.out.println("6. 데이터의 저장 ");
-			System.out.println("7. 승률 , 타율 순위");
+			System.out.println("7. 데이터 로드");
 			System.out.println("9. 종료");
 			System.out.println("어느 작업을 하시겠습니까? = ");
 			int num = sc.nextInt();
@@ -34,13 +36,13 @@ public class mainClass {
 				dao.update();
 				break;
 			case 5:
-				dao.allPrint();
+				dao.allprint();
 				break;
 			case 6:
-				dao.dataSave();
+				dao.save();
 				break;
 			case 7:
-				dao.pitcherRank();
+				dao.load();
 				break;
 			}
 			if(num == 9) break;
@@ -48,3 +50,4 @@ public class mainClass {
 	}
 }
 
+	
