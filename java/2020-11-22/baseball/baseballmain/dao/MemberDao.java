@@ -212,8 +212,10 @@ public class MemberDao {
 				ba.add(list.get(i));
 			}
 		}
-		pi = sort(pi);
+//		List<Human> pi1 = sort(pi);
+//		List<Human> ba1 = sort(ba);
 		ba = sort(ba);
+		pi = sort(pi);
 		for (int i = 0; i < pi.size(); i++) {
 			System.out.println(pi.get(i));
 		}
@@ -225,9 +227,10 @@ public class MemberDao {
 	
 	public List<Human> sort(List<Human> list) {
 		Human h = null;
-		if(list instanceof Pitcher) {
-			for (int i = 0; i < list.size() - 1; i++) {
-				for (int j = i + 1; j < list.size(); j++) {
+		
+		for (int i = 0; i < list.size() - 1; i++) {
+			for (int j = i + 1; j < list.size(); j++) {
+				if(list.get(i) instanceof Pitcher && list.get(j) instanceof Pitcher) {
 					double num1 = ((Pitcher)list.get(i)).getDefence();
 					double num2 = ((Pitcher)list.get(j)).getDefence();
 					if(num1 < num2) {
@@ -235,12 +238,7 @@ public class MemberDao {
 						list.set(i, list.get(j));
 						list.set(j, h);
 					}
-				}
-			}
-			return list;
-		}else if(list instanceof Batter) {
-			for (int i = 0; i < list.size() - 1; i++) {
-				for (int j = i + 1; j < list.size(); j++) {
+				}else if(list.get(i) instanceof Batter && list.get(j) instanceof Batter) {
 					double num1 = ((Batter)list.get(i)).getHitAvg();
 					double num2 = ((Batter)list.get(j)).getHitAvg();
 					if(num1 < num2) {
@@ -250,8 +248,12 @@ public class MemberDao {
 					}
 				}
 			}
-			return list;
 		}
+//		for (int i = 0; i < list.size(); i++) {
+//			System.out.println(list.get(i));
+//		}
+
+		
 		return list;
 	}
 }
