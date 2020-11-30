@@ -1,0 +1,7 @@
+package FrameSwapSwing;
+
+public class main {
+	public static void main(String[] args) {
+		new JFrameOne();
+	}
+}
