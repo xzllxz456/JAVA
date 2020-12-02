@@ -1,0 +1,39 @@
+package thread;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class ClientThread extends Thread{
+	Socket socket;
+	String msg;
+	public ClientThread(Socket socket) {
+		this.socket = socket;
+		Scanner sc = new Scanner(System.in);
+		System.out.print("전송할 문자 입력 : ");
+		msg = sc.next();
+		
+	}
+
+	@Override
+	public void run() {
+		super.run();
+		try {
+			PrintWriter pw = new PrintWriter(socket.getOutputStream());
+			pw.println(msg);
+			pw.flush();
+
+			// recv
+			BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+			msg = br.readLine();
+			System.out.println("다시 받은 메세지 " + msg);
+		}catch (IOException e) {
+			// TODO: handle exception
+		}
+	}
+	
+	
+}

@@ -1,0 +1,14 @@
+package main;
+
+public class main {
+	public static void main(String[] args) {
+		/*
+		  	TCP : Transmission Control Protocol
+		  			  전송		   제어	 통신규약 
+		 
+		 	TCP server : 
+		 	Web server(Tomcat) : 
+		 	DB  server : 
+		 */
+	}
+}

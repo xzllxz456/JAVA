@@ -1,0 +1,10 @@
+package main;
+
+public class main {
+	public static void main(String[] args) {
+		Thread thread1 = new ThreadEx("퐁");
+		thread1.start();
+		
+		System.out.println("종료");
+	}
+}

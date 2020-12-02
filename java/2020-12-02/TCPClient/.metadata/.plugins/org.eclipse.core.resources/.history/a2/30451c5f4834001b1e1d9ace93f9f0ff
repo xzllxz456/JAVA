@@ -1,0 +1,9 @@
+package main;
+
+public class main {
+	public static void main(String[] args) {
+		/*
+		 	1. 접속을 해야 할 Server 주소를 설정 = Socket
+		 */
+	}
+}

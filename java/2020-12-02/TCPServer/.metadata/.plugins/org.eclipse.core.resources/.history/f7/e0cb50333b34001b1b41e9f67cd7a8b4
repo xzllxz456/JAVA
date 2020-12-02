@@ -1,0 +1,28 @@
+package main;
+
+public class main {
+	public static void main(String[] args) {
+		/*
+		  	TCP : Transmission Control Protocol
+		  			  전송		   제어	 통신규약 
+		 
+		 	TCP server : 
+		 		Web server(Tomcat) : 
+		 		DB  server : 
+		 	
+		 	종단 System : 	host 안주인
+		 				PC, Printer, Smart Phone, Scanner
+		 							client : 사용자
+		 							
+		 	Router - hardware
+		 			 host들 간에 상호 데이터를 교환할 수 있도록 하는 기기
+		 			 
+		 	Inter Network	포괄적인 통신망
+		 	
+		 	Protocol - 통신규약 
+		 	TCP : Transmission Control Protocol
+		 	UDP : User Datagram Protocol
+		 	
+		 */
+	}
+}

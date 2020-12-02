@@ -1,0 +1,28 @@
+package thread;
+
+import java.net.Socket;
+
+public class ServerThread extends Thread{
+	
+	Socket clientSocket;
+	
+	public ServerThread(Socket clientSocket) {
+		this.clientSocket = clientSocket;
+	}
+
+	@Override
+	public void run() {
+		super.run();
+		BufferedReader br = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+		String msg = br.readLine(); // 실질적으로 packet을 받는 부분
+		//			br.close(); 통신이 끊어짐으로 생략
+		System.out.println("클라이언트로부터 받은 메세지: " + msg);
+
+		PrintWriter pw = new PrintWriter(clientSocket.getOutputStream());
+		pw.println(msg);
+		pw.flush();
+		
+	}
+	
+	
+}

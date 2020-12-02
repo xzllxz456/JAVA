@@ -1,0 +1,11 @@
+package main;
+
+public class main {
+	public static void main(String[] args) {
+		Thread thread1 = new ThreadEx("퐁");
+		Thread thread2 = new ThreadEx("당");
+		thread1.start();
+		thread2.start();
+		System.out.println("종료");
+	}
+}

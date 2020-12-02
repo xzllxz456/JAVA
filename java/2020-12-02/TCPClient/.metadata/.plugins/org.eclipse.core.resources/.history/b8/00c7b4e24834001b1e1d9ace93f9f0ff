@@ -1,0 +1,20 @@
+package main;
+
+import java.net.InetSocketAddress;
+import java.net.Socket;
+
+public class main {
+	public static void main(String[] args) {
+		/*
+		 	1. 접속을 해야 할 Server 주소를 설정 = Socket
+		 	
+		 	2. 접속 
+		 	3. 데이터 송수신
+		 */
+		
+		InetSocketAddress sockAdd = new InetSocketAddress("192.168.0.118", 9000);
+//															host name		server port
+		Socket socket = new Socket();
+	}
+}
+

@@ -1,0 +1,61 @@
+package main;
+
+public class main {
+	public static void main(String[] args) {
+		/*
+		  	TCP : Transmission Control Protocol
+		  			  전송		   제어	 통신규약 
+		 
+		 	TCP server : 
+		 		Web server(Tomcat) : 
+		 		DB  server : 
+		 	
+		 	종단 System : 	host 안주인
+		 				PC, Printer, Smart Phone, Scanner
+		 							client : 사용자
+		 							
+		 	Router - hardware
+		 			 host들 간에 상호 데이터를 교환할 수 있도록 하는 기기
+		 			 
+		 	Inter Network	포괄적인 통신망
+		 	
+		 	Protocol - 통신규약 
+		 	TCP : Transmission Control Protocol
+		 			신사적인 프로토콜 신뢰할수 있는 프로토콜
+		 			전화 ---> 상대방 통신 시작(상대방이 받아야 1:1로 주고 받아야 함)
+		 			연결이 되어야지 통신을 할수 있어 신용할수 있다
+		 			데이터의 경계가 없다, 전송데이터의 크기가 한정되어 있지 않다. 
+		 			UDP 보다 느림<채팅>
+		 			1:1 통신 uni cast
+		 			
+		 	UDP : User Datagram Protocol
+		 			비연결형
+		 			편지 ---> (일단 보내고 끝 보내고 확인 안함) 지상파 방송
+		 			데이터의 경계가 있다.(크기를 정해야한다-> 얼마나 보낼지 모름)
+		 			전송속도 빠름<게임>
+		 			1 : 1  통신	uni cast
+		 			1 : n 통신	board cast
+		 			n : n 통신	multi cast
+		 			
+		 	7 Layer(계층)
+		 	1계층 - Physical Layer 	물리계층
+		 	2계층 - Data Link Layer	주소를 헤더에 첨
+		 	3계층 - Network Layer 	Ip == Address 
+		 	4계층 - Tranceport Layer	Port 지정
+		 	5계층 - Session Layer		세션을 동기화
+		 	6계층 - Presentation Layer	보안, 압축, 확장
+		 	7계층 - Application Layer 프로그램
+		 	
+		 	Paket(데이터의 묶음) Paket을 서버로 던짐
+		 	제어 정보, 데이터 등이 결합된 형태로 전송되는 실제의 데이터
+		 	TCP/UDP, IP, Port, String, Object
+		 	
+		 	IP : Internet Protocol == 주소
+		 	
+		 	IPv4 : 0 ~ 255의 숫자가 4묶음  XXX.XXX.XXX.XXX
+		 	IPv6 : 					  XXX.XXX.XXX.XXX.XXX.XXX
+		 */
+		
+		
+	}
+}
