@@ -19,7 +19,19 @@ public class MapSungjukScannerExam {
 		총점:  ???
 		평균:  ???
 		***************************************/
-
+		MapSungjukScanner sungjuk = new MapSungjukScanner();
+		sungjuk.startSungjukProcess();
+		//sungjuk.printData();
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
